@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>thesisretreat - Write that thesis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="A basic template for Bootstrap 3.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/basic.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <!--if lt IE 9
+    script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+    
+    -->
+  </head>
+  <body>
+    <!---->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#main" class="navbar-brand"><font class="pink">thesis</font><b>retreat</b></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#why">why</a></li>
+            <li><a href="#how">how</a></li>
+            <li><a href="#what">what</a></li>
+            <li><a href="#where">where</a></li>
+            <li><a href="#register">register</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div id="main" class="container full-height vertical-center">
+      <div class="row">
+        <div class="col col-lg-offset-2 col-lg-8">
+          <div class="text-left">
+            <div class="row wrapper">
+              <div class="col col-lg-6 title">
+                <h1 class="big-title main-title">Need to write<font class="pink"> your thesis?</font></h1>
+                <p>Get motivated at the<a> #ThesisRetreat</a></p><a target="_blank" href="https://eventbrite.com">
+                  <div class="btn btn-primary">Register Now</div></a><br><a href="#why"><b>Why</b> should you attend a thesis retreat?</a>
+              </div>
+              <div class="col col-lg-6 event-box">
+                <div class="eventbox">
+                  <div class="event-box-line">
+                    <div class="left"><i class="fas fa-calendar fa-2x"></i></div>
+                    <div class="event-info">
+                      <h3>12 - 14 April 2019</h3>
+                      <p>A weekend event</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="eventbox">
+                  <div class="event-box-line">
+                    <div class="left"><i class="fas fa-map-marker fa-2x"></i></div>
+                    <div class="event-info">
+                      <h3>Lane End Conference Centre</h3>
+                      <p>Buckinghamshire, UK</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/scrolling.js"></script>
+    <script defer="" src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- JavaScript jQuery code from Bootply.com editor-->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      });
+    </script>
+    <script>
+      var right = $(".right-bg");
+      var left = $(".left-bg");
+      right.css({
+        "background-position": (right.width()*.66) + "px " + "0px"
+      });
+      left.css({
+        "background-position": (-left.width()*.66) + "px " + "0px"
+      });
+    </script>
+    <script>
+      $("#sat-btn").click(function(){
+      $("#saturday").show();
+      $("#friday").hide();
+      $("#sunday").hide();
+      });
+      $("#fri-btn").click(function(){
+      $("#friday").show();
+      $("#saturday").hide();
+      $("#sunday").hide();
+      });
+      $("#sun-btn").click(function(){
+      $("#saturday").hide();
+      $("#friday").hide();
+      $("#sunday").show();
+      });
+    </script>
+  </body>
+</html>

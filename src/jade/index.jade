@@ -1,0 +1,158 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    title thesisretreat - Write that thesis
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(name='description', content='A basic template for Bootstrap 3.0')
+    link(href='//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css', rel='stylesheet')
+    link(href="/css/basic.css", rel="stylesheet")
+    link(href="/css/style.css", rel="stylesheet")
+
+    //if lt IE 9
+      script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+
+  body
+    //
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#main')
+            font.pink thesis
+            b retreat
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#why') why
+            li
+              a(href='#how') how
+            li
+              a(href='#what') what
+            li
+              a(href='#where') where
+            li
+              a(href='#register')
+                font.pink register
+            li
+              a(href='#contact') contact
+
+
+    //
+
+    .container#main.full-height.vertical-center
+      .row
+        .col.col-lg-offset-2.col-lg-8
+          .text-left
+            include main.jade
+    hr.style-two
+
+    .container#why.full-height.vertical-center.parallax.right-bg
+      .row
+        .col.col-lg-offset-1.col-lg-10
+          .text-left
+            include why.jade
+
+    hr.style-two
+
+    .container#how.full-height.vertical-center.parallax.left-bg
+      .row
+        .col.col-lg-offset-1.col-lg-10
+          .text-left
+            include how.jade
+
+    hr.style-two
+
+    .container#what.full-height.vertical-center.parallax.right-bg
+      .row
+        .col.col-lg-offset-1.col-lg-10
+          .text-left
+            include what.jade
+
+    hr.style-two
+
+    .container#where.full-height.vertical-center.parallax.left-bg
+      .row
+        .col.col-lg-offset-1.col-lg-10
+          .text-left
+            include where.jade
+
+    .hr.style-two
+
+    .container#register.full-height.vertical-center
+      .row
+        .col.col-lg-offset-2.col-lg-8
+          .text-left
+            include register.jade
+
+    .hr.style-twos
+
+    .container#contact.full-height.vertical-center
+      .row
+        .col.col-lg-offset-2.col-lg-8
+          .text-left
+            include contact.jade
+
+    a(href='#main')
+      #fixedbtn-up
+        .inner-fixedbtn-up
+          i.fas.fa-arrow-up.fa-2x
+
+    a(href='#register')
+      #fixedbtn-reg
+        .inner-fixedbtn-reg Register
+
+      #fixedbtn-offer
+        .inner-fixedbtn-offer
+          b Register your
+          br
+          b CDT cohort.
+          br
+          | Get the
+          br
+          u group discount!
+
+
+
+
+
+
+    script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script(type='text/javascript', src='//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js')
+    script(type='text/javascript', src='../js/scrolling.js')
+    script(defer='', src='https://use.fontawesome.com/releases/v5.0.8/js/all.js')
+    // JavaScript jQuery code from Bootply.com editor
+    script(type='text/javascript').
+      $(document).ready(function() {
+      });
+    script.
+      var right = $(".right-bg");
+      var left = $(".left-bg");
+      right.css({
+        "background-position": (right.width()*.66) + "px " + "0px"
+      });
+      left.css({
+        "background-position": (-left.width()*.66) + "px " + "0px"
+      });
+    script.
+      $("#sat-btn").click(function(){
+      $("#saturday").show();
+      $("#friday").hide();
+      $("#sunday").hide();
+      });
+      $("#fri-btn").click(function(){
+      $("#friday").show();
+      $("#saturday").hide();
+      $("#sunday").hide();
+      });
+      $("#sun-btn").click(function(){
+      $("#saturday").hide();
+      $("#friday").hide();
+      $("#sunday").show();
+      });
